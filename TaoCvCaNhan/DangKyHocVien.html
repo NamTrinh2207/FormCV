@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký học viên</title>
+</head>
+<style>
+  #Tbody{
+    font-family: "Times New Roman";
+    width: 50%;
+    height: 40%;
+    background-color: blanchedalmond;
+    padding: 10px;
+  }
+  #Register{
+    background-color: lightskyblue;
+    margin-top: 0px;
+    color: blue;
+  }
+  .layer{
+    float: right;
+    width: 250px;
+    border: 1px solid black;
+    padding: 3px;
+    margin-right: 250px;
+  }
+  #male{
+    margin-left: 62px;
+  }
+  #lop{
+    margin-left: 95px;
+  }
+  #box{
+    margin-left: 125px;
+  }
+  .container{
+    color: blue;
+  }
+</style>
+<body>
+<form id="Tbody" action="">
+  <h1 ID="Register">ĐĂNG KÝ HỌC VIÊN</h1>
+  <label class="container">Họ và tên</label>
+  <input type="text" name="Name" class="layer" size="30px" placeholder="Nhập họ tên" autofocus=""><br>
+  <br><label class="container">Ngày sinh</label>
+  <input type="number" name="Date" class="layer" placeholder="Nhập năm sinh"><br>
+  <br><label class="container">Giới tính</label>
+  <input type="radio" name="Gender" id="male">
+  <label for="male">Nam</label>
+  <input type="radio" name="Gender" id="female">
+  <label for="female">Nữ</label><br>
+  <br><label class="container">Địa chỉ</label>
+  <input class="layer" type="text" name="Name" placeholder="Nhập địa chỉ"><br>
+  <br><label class="container">Lớp</label>
+  <select name="class" id="lop" >
+    <option value="class">-Chọn lớp-</option>
+  </select><br>
+  <br><label class="container">Email</label>
+  <input class="layer" type="text" name="UserName" placeholder="Nhập Email"><br>
+  <br><label class="container">Số điện thoại</label>
+  <input class="layer" type="number" name="Phone" placeholder="Nhập số điện thoại"><br>
+  <br><input id="box" type="submit" value="Đăng Ký">
+  <input  type="reset" value="Nhập lại">
+</form>
+</body>
+</html>
